@@ -108,40 +108,38 @@
 	</style>
 
 </head>
+
+
 <link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 <style>
-	.topnav {
-		overflow: hidden;
-		background-color: #ffffff;
-	}
 
-	.topnav a {
-		float: left;
-		text-decoration: none;
-		color: #27221f;
-		text-align: center;
-		padding: 14px 16px;
-		font-size: 20px
-	}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #27221f;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button.contact {
+  background-color: transparent;
+  color: #27221f;
+  text-transform: uppercase;
+  border: 2px solid #27221f;
+}
 
+a {
+  color: #27221f;
+  text-decoration: none;
+}
 
-	.topnav a:hover {
-		background-color: #27221f;
-		color: #ffffff;
-	}
-
-	.topnav a:active {
-		background-color: #ffffff color: #27221f
-	}
-
-
-	.topnav-right {
-		float: right;
-	}
-
+a:hover {
+  color:#ACCA70;
+  text-decoration: underline;
+}
 </style>
-
 </head>
 
 <body class="body">
@@ -169,7 +167,7 @@
 				<p>
 					"An 80's centric media player"
 				</p>
-				<a href="#casestudy1"> View more...</a>
+				<a href="#casestudy1" class="button"> View more...</a>
 			</div>
 
 			<div class="card" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 62; transform: translate(169.374px, 29.5px) scale(0.625);" <h2>Crate</h2>
@@ -177,7 +175,7 @@
 				<p>
 					"Harmonic playlist generator"
 				</p>
-				<a href="#casestudy4"> View more...</a>
+				<a href="#casestudy4" class="button"> View more...</a>
 			</div>
 
 			<div class="card" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 50; transform: translate(418px, 22px) scale(0.5);" <h2>Re:Season</h2>
@@ -185,7 +183,7 @@
 				<p>
 					"Cook sustainably"
 				</p>
-				<a href="reseasoncasestudy.html"> View more...</a>
+				<a href="reseasoncasestudy.html" class="button"> View more...</a>
 			</div>
 
 			<div class="card" style="display: inline-block; position: absolute; transform-origin: 0px 0px; z-index: 62; transform: translate(630.626px, 29.5px) scale(0.625);" <h2>Impression</h2>
@@ -193,7 +191,7 @@
 				<p>
 					"Online store for printmakers"
 				</p>
-				<a href="#casestudy2"> View more...</a>
+				<a href="#casestudy2" class="button"> View more...</a>
 			</div>
 
 
@@ -213,7 +211,7 @@
 					Do you like my work and want to discuss opportunities? Please get in touch.
 				</p>
 				<div>
-					<a href="mailto:drew.hertel@gmail.com">Email me</a>
+					<a href="mailto:drew.hertel@gmail.com" class="button contact">Email me</a>
 				</div>
 				<div>
 					<!--Social Media Layout and Placeholders-->
