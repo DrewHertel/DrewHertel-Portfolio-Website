@@ -15,8 +15,7 @@
 
 .topnav a {
   float: left;
-  color: #ffffff
-  text-align: center;
+  color: #ffffff text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px
@@ -28,13 +27,13 @@
 }
 
 .topnav a.active {
-  background-color: #ffffff
-  color: #27221f
+  background-color: #ffffff color: #27221f
 }
 
 .topnav-right {
   float: right;
 }
+
 a {
   color: #27221f;
 }
@@ -46,7 +45,6 @@ a:hover {
 #showcase {
   height: 570px;
   overflow: visible !important;
-
 }
 
 .card {
@@ -93,12 +91,13 @@ a:hover {
 }
 
 .nav.right {
-      right: -43px;
-      -webkit-border-radius: 5px 12px 12px 5px;
-      -moz-border-radius: 5px 12px 12px 5px;
-      border-radius: 5px 12px 12px 5px;
-    }
+  right: -43px;
+  -webkit-border-radius: 5px 12px 12px 5px;
+  -moz-border-radius: 5px 12px 12px 5px;
+  border-radius: 5px 12px 12px 5px;
 }
+}
+
 .intro-section {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -117,37 +116,37 @@ a:hover {
 }
 
 .heading2 {
-height: auto;
-margin-top: 0px;
-margin-bottom: 0px;
-padding-left: 0px;
-color: #27221f;
-font-size: 24px;
-line-height: 1.4;
-font-weight: 400;
-text-align: center;
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  color: #27221f;
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 400;
+  text-align: center;
 }
 
 .intro-container {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding: 128px 64px 64px 128px;
+  padding: 64px 64px;
   opacity: 1;
 }
+
 .about-container {
   margin-left: auto;
   margin-right: auto;
-  padding: 16px 16px 16px 16px;
+  padding: 16px, 0px;
 }
 
 .about-right {
-
-  margin-right:auto;
-  margin-left:auto;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 64px;
-
 }
+
 .footer-section {
   margin-top: 0px;
   margin-bottom: 64px;
@@ -157,7 +156,7 @@ text-align: center;
   max-width: 936px;
   margin-right: auto;
   margin-left: auto;
-  padding: 512px 64px 64px 128px;
+  padding: 64px 64px;
   opacity: 1;
   background-clip: border-box;
   -webkit-text-fill-color: inherit;
@@ -166,21 +165,27 @@ text-align: center;
 .center-align {
   text-align: center;
 }
+
 .social-icons {
-  margin-top:24px;
+  margin-top: 24px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #27221f;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px; /* width of the border, type, color */
+  border-radius: 3px;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button.contact {
   background-color: transparent;
   color: #27221f;
@@ -194,14 +199,14 @@ a {
 }
 
 a:hover {
-  color:#ACCA70;
+  color: #ACCA70;
   text-decoration: underline;
 }
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
 }
