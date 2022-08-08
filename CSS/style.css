@@ -9,6 +9,8 @@
 .topnav {
   overflow: hidden;
   background-color: #ffffff;
+  position: sticky;
+  top: 0;
 }
 
 .topnav a {
@@ -33,7 +35,70 @@
 .topnav-right {
   float: right;
 }
+a {
+  color: #27221f;
+}
 
+a:hover {
+  color: #d6f300;
+}
+
+#showcase {
+  height: 570px;
+  overflow: visible !important;
+
+}
+
+.card {
+  width: 260px;
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card h2 {
+  margin: 0 0 72px 0;
+}
+
+.card a {
+  font-size: 18px;
+  display: block;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.nav {
+  width: 32px;
+  height: 67px;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 33%;
+}
+
+.nav:active,
+.nav.down {
+  backgorund: #FFFFFF;
+  border: solid 2px rgba (0, 0, 0, 0.55);
+}
+
+.nav.left {
+  left: -43px;
+  -webkit-border-radius: 12px 5px 5px 12px;
+  -moz-border-radius: 12px 5px 5px 12px;
+  border-radius: 12px 5px 5px 12px;
+}
+
+.nav.right {
+      right: -43px;
+      -webkit-border-radius: 5px 12px 12px 5px;
+      -moz-border-radius: 5px 12px 12px 5px;
+      border-radius: 5px 12px 12px 5px;
+    }
+}
 .intro-section {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -64,16 +129,28 @@ text-align: center;
 }
 
 .intro-container {
-  max-width: 936px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding: 128px 64px 64px 128px;
   opacity: 1;
 }
+.about-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 16px 16px 16px;
+}
 
+.about-right {
+
+  margin-right:auto;
+  margin-left:auto;
+  padding-top: 64px;
+
+}
 .footer-section {
   margin-top: 0px;
-  margin-bottom: 256px;
+  margin-bottom: 64px;
 }
 
 .footer-container {
@@ -84,4 +161,47 @@ text-align: center;
   opacity: 1;
   background-clip: border-box;
   -webkit-text-fill-color: inherit;
+}
+
+.center-align {
+  text-align: center;
+}
+.social-icons {
+  margin-top:24px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #27221f;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button.contact {
+  background-color: transparent;
+  color: #27221f;
+  text-transform: uppercase;
+  border: 2px solid #27221f;
+}
+
+a {
+  color: #27221f;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#ACCA70;
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
