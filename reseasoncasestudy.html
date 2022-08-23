@@ -12,21 +12,30 @@
 
 </head>
 
-<body class="body">
 
-	<div class="topnav">
-		<a class="active" href="index9.html">Drew Hertel</a>
-		<div class="topnav-right">
-			<a href="#Work">Work</a>
-			<a href="about.html">About</a>
-			<a href="#contact">Contact</a>
+	<body class="body">
+		<div id="page-container">
+	    <div id="content-wrap">
+	<header>
+		<div class="navbarcontainer">
+		    <div class="navtoggle" id="myNavtoggle">
+		<img class="logo" src="Logo.svg" alt="Drew Hertel">
+			<nav>
+				<ul>
+				<li><a href="index9.html">Work</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+				<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+			</ul>
+			</nav>
 		</div>
 	</div>
+	</header>
 
 
 	<picture>
   <source srcset="images/Reseasoncasestudyver6small.jpg" media="(max-width:767px)">
-    <img src='images/Reseasoncasestudyver6.jpg' alt="reseasoncasestudy">
+    <img src='images/Reseasoncasestudyver6.jpg' class="center" alt="reseasoncasestudy">
 		</picture>
 
 
@@ -36,7 +45,7 @@
 
 
 		<footer id="contact" class="footer-container">
-						<h2 class="heading2">how to reach me</h2>
+						<h2 class="heading2">How to reach me</h2>
 					<p class="center-align">
 						Do you like my work and want to discuss opportunities? Please get in touch.
 					</p>
