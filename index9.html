@@ -7,8 +7,10 @@
 	<meta name="author" content="DrewHertel">
 	<meta name="description" content="UI/UX Portfolio Website">
 	<title>Drew Hertel Portfolio</title>
+	<script src="js/scripts.js"></script>
 	<script src="https://kit.fontawesome.com/cdf3a415bd.js" crossorigin="anonymous"></script>
- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 </head>
@@ -16,43 +18,46 @@
 
 <body class="body">
 	<div id="page-container">
-    <div id="content-wrap">
-<header>
-	<div class="navbarcontainer">
-	    <div class="navtoggle" id="myNavtoggle">
-	<img class="logo" src="Logo.svg" alt="Drew Hertel">
-		<nav>
-			<ul>
-			<li><a href="#Work">Work</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-			<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-		</ul>
-		</nav>
-	</div>
-</div>
-</header>
+		<div id="content-wrap">
+			<header>
+				<div class="navbarcontainer">
+					<div class="navtoggle" id="myNavtoggle">
+						<a class="logo" href="index9.html"><img src="images/Logo48.svg" class="logo" alt="Drew Hertel"></a>
+						<nav>
+							<ul>
+								<li><a href="index9.html">Work</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+								<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
 
+			<main>
+				<div id="hero">
+					<div class="intro-container">
 
-		<div class="intro-container">
-			<div id="hero">
-			<h1 class="heading"><span>Hi, I'm Drew. I'm a UI/UX designer from Colorado.</span><br>Welcome to my portfolio.</h1>
-		</div>
-	</div>
+						<h1><span>Hi, I'm Drew. I'm a UI/UX designer from Colorado.</span><br>Welcome to my portfolio.</h1>
+					</div>
+				</div>
 
-
+				<!--
 	<div class="showcase-container">
 		<div id="showcase" class="noselect">
 			<div class="card">
-				<h2>Groovebox</h2>
+
 				<img src="images/1.png" alt="Groovebox">
+				<h2>Groovebox</h2>
 				<p>"An 80's centric media player"</p>
 				<a href="#casestudy1" class="button"> View more...</a>
 			</div>
 
 			<div class="card">
-				<h2>Crate</h2>
+
 				<img src="images/4.png" alt="Crate">
+						<h2>Crate</h2>
 				<p>
 					"Harmonic playlist generator"
 				</p>
@@ -60,8 +65,9 @@
 			</div>
 
 			<div class="card">
-				 <h2>Re:Season</h2>
+
 				<img src="images/3.png" alt="ReSeason">
+						<h2>Re:Season</h2>
 				<p>
 					"Cook sustainably"
 				</p>
@@ -69,55 +75,124 @@
 			</div>
 
 			<div class="card">
-				<h2>Impression</h2>
+
 				<img src="images/2.png" alt="Impression">
+					<h2>Impression</h2>
 				<p>
 					"Online store for printmakers"
 				</p>
 				<a href="#casestudy2" class="button"> View more...</a>
 			</div>
 
-	 </div>
- </div>
-
-
-
-
-
-
-
-		<div class="footer-section">
-	<footer>
-
-			<div class="footer-container">
-				<h2 class="heading2">How to reach me</h2>
-				<p class="center-align">
-					Do you like my work and want to discuss opportunities? Please get in touch.
-				</p>
-				<div class="social-icons">
-					<a href="mailto:drew.hertel@gmail.com" class="button contact">Email me</a>
-				</div>
-				<div class="social-icons">
-					<!--Social Media Layout and Placeholders-->
-					<a href="LINKEDIN-URL" target="_blank">
-						<i class="fa-brands fa-linkedin"></i>
-					</a>
-					<a href="TWITTER-URL" target="_blank">
-						<i class="fa-brands fa-instagram"></i>
-					</a>
-
-				</div>
-				<div class="center-align">
-					<p>Copyright Drew Hertel 2022</p>
-				</div>
-			</div>
-</footer>
 		</div>
+	</div>
+-->
+				<div id="work">
+					<div class="container">
+						<h3> //Projects </h3>
+						<div class="row">
+
+							<div class="column col-md-6 col-lg-7">
+								<picture>
+									<source srcset="images/ReSeasonsmall.png" media="(max-width:640px)">
+									<img src="images/ReSeasonlarge.png" alt="ReSeason">
+								</picture>
+							</div>
+
+							<div class="column col-md-6 col-lg-5">
+								<h2>Re:Season</h2>
+								<p>A recipe app designed to help you cook sustainably</p>
+								<a href="Reseasoncasestudy.html" class="button">View more</a>
+							</div>
+						</div>
 
 
 
-</div>
-</div>
+						<div class="row">
+
+							<div class="column col-md-6 col-lg-7">
+								<picture>
+									<source srcset="images/cratesmall.png" media="(max-width:767px)">
+									<img src="images/cratelarge.png" alt="Crate">
+								</picture>
+							</div>
+
+							<div class="column col-md-6 col-lg-5">
+								<h2>Crate</h2>
+								<p>A harmonic playlist generator designed to help you overcome creative blocks</p>
+								<a href="projectlink" class="button">View more</a>
+							</div>
+						</div>
+
+						<div class="row">
+
+							<div class="column col-md-6 col-lg-7">
+								<picture>
+									<source srcset="images/impressionsmall.png" media="(max-width:767px)">
+									<img src="images/impressionlarge.png" alt="Crate">
+								</picture>
+							</div>
+
+							<div class="column col-md-6 col-lg-5">
+								<h2>Impression</h2>
+								<p>An online store aimed at printmakers</p>
+								<a href="projectlink" class="button">View more</a>
+							</div>
+						 	</div>
+
+
+						<div class="row">
+
+							<div class="column col-md-6 col-lg-7">
+								<picture>
+									<source srcset="images/Grooveboxsmall.png" media="(max-width:767px)">
+									<img src="images/grooveboxlarge.png" alt="Groovebox">
+								</picture>
+							</div>
+
+							<div class="column col-md-6 col-lg-5">
+								<h2>Groovebox</h2>
+								<p>An 80's focused media player</p>
+								<a href="projectlink" class="button">View more</a>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+
+			</main>
+
+
+
+			<footer id="contact">
+
+				<div class="footer-container">
+					<h2 class="heading2">How to reach me</h2>
+					<p class="center-align">
+						Do you like my work and want to discuss opportunities? Please get in touch.
+					</p>
+					<div class="social-icons">
+						<a href="mailto:drew.hertel@gmail.com" class="button">Email me</a>
+					</div>
+					<div class="social-icons">
+						<!--Social Media Layout and Placeholders-->
+						<a href="LINKEDIN-URL" target="_blank">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+						<a href="TWITTER-URL" target="_blank">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+
+					</div>
+					<div class="center-align">
+						<h4>Copyright Drew Hertel 2022</h4>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
 
 
 
@@ -126,8 +201,9 @@
 
 
 
-<script src="js/scripts.js"></script>
-	<script src="js/lib/jquery.js"></script>
+
+
+	<!--
 	<script src="js/lib/jquery.cloud9carousel.js"></script>
 	<script>
 		$(function() {
@@ -174,7 +250,7 @@
 			})
 		})
 	</script>
-
+-->
 </body>
 
 </html>

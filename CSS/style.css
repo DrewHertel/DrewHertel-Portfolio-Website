@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -6,67 +9,99 @@
 #content-wrap {
   padding-bottom: 2.5rem;    /* Footer height */
 }
-
-
-.body {
-  max-width: none;
+body {
+  background-color: white;
   font-family: 'Noto Sans', sans-serif;
-  color: #27221f;
   font-size: 16px;
   line-height: 1.4;
-}
-
-.heading {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 16px;
   color: #27221f;
-  font-size: 24px;
-  line-height: 1.4;
-  font-weight: 400;
-  text-align: center;
-}
-
-.heading2 {
-  color: #27221f;
-  font-size: 24px;
-  line-height: 1.4;
-  font-weight: 400;
-  text-align: center;
-  padding-top: 32px;
-
-}
-h2 {
-  padding-top: 16px;
-}
-
-h3 {
-  font-size: 1.75em;
-  font-weight: 600;
 }
 
 img {
   max-width: 100%;
 
 }
+ h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  color: #27221f;
+  font-size: 2.25em;
+  line-height: 1.4;
+  font-weight: 550;
+  text-align: center;
+}
 
+h2 {
+  color: #27221f;
+  font-size: 1.5em;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: left;
+  padding-top: 24px;
+  padding-left: 0px;
+}
+
+.heading2 {
+  color: #27221f;
+  font-size: 1.25em;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 32px;
+
+}
+
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+
+
+h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+
+}
+
+h4 {
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+/*header styling*/
 header {
-
+position:fixed;
+width:100%;
 background-color: #ffffff;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:936px;
+
 }
 
 .logo {
 max-width:64px;
-padding:16px;
+padding-top:16px;
+padding-left:10px
 }
 
-.navbarcontainer {
-  overflow: hidden;
-  background-color: #ffffff;
-  position: sticky;
-  top: 0px;
+main {
+  padding-top: 80px;
 }
 
+/*nav*/
+
+nav {
+  width: 100%;
+  box-sizing: border-box;
+}
 
 nav > ul {
   list-style-type: none;
@@ -76,9 +111,8 @@ nav > ul {
 
 
 nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
+  padding: 0 16px;
+  font-weight: 400;
   color: #27221f;
   text-decoration: none;
 }
@@ -87,10 +121,13 @@ nav > ul > a:hover {
   background-color: #27221f;
   color: #ffffff;
 }
-nav > ul > a.active {
+nav > ul > a:active {
   background-color: #ffffff;
   color: #27221f;
 }
+
+
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -102,8 +139,21 @@ nav > ul > a.active {
   position: absolute;
   right: 16px;
   top: 16px;
-  padding-bottom: 0px;
   font-size: 20px;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 a {
@@ -114,55 +164,13 @@ a:hover {
   color: 	#585858;
 }
 
-
-
+/*index*/
 #hero {
   background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
-#showcase {
-  height: 640px;
-  overflow: visible !important;
-}
-
-.showcase-container {
-  max-width: 936px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 16px;
-  margin-top: 16px;
-  padding: 0px;
-  opacity: 1;
-}
-
-
-.card {
-  width: 212px;
-  padding: 12px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 50);
-  border: 2px black solid;
-  border-radius: 12px;
-}
-
-.card h2 {
-  margin: 0 0 72px 0;
-}
-
-.card a {
-  font-size: 18px;
-  display: block;
-}
-
-.card p {
-  font-size: 15px;
-}
-
-
-
-
 .intro-container {
   max-width: 936px;
   margin-top: 0px;
@@ -174,30 +182,25 @@ a:hover {
   opacity: 1;
 }
 
-.container {
-  max-width: 936px;
-
-  margin-right: auto;
-  margin-left: auto;
-
-  padding-left: 16px;
-  padding-right: 16px;
-  opacity: 1;
-}
-
 .row {
-  margin: 0px 0;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+  margin: 16px;
+  display: inline-block;
+  width: 100%;
+
 }
 
-[class*="col-"]{
-  float: left;
-  padding: 16px;
+#work .row {
+  padding-bottom: 25px;
+  padding-top:25px;
+  padding-right: 16px;
+  border-bottom: 1px solid rgba(22, 16, 31, 0.3);
 }
+
+
+
+
+
+
 
 .footer-container {
   max-width: 936px;
@@ -214,12 +217,7 @@ a:hover {
 .center-align {
   text-align: center;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+
 .social-icons {
   margin-top: 24px;
   margin-right: auto;
@@ -227,106 +225,112 @@ a:hover {
   text-align: center;
 }
 
-.button {
+
+
+.button, .button:visited {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #27221f;
-  color: #ffffff;
-  /* needed to override the default link color */
-  font-weight: 400;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-
-  /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
-.button:hover {
-  opacity: 0.8;
-}
-.button.contact {
-  background-color: transparent;
-  color: #27221f;
-  text-transform: uppercase;
   border: 2px solid #27221f;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 16px;
+  opacity: 1;
+  transition-duration: 0.4s;
+  border-radius: 2px;
+}
+
+.button:after {
+  background-color: white;
+  border: 2px solid #27221f;
+  color: #27221f;
+}
+
+.button:hover {
+  background-color: white;
+  border: 2px solid #27221f;
+  color: #27221f;
+}
+
+.button:hover:after {
+  width: 110%;
 }
 
 
+/*media queries*/
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    position: fixed;
+    text-align: unset;
 
-@media screen and (min-width: 640px) {
-  nav > ul > li {
-    display: inline-block;
-    max-width: 100%;
   }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 0;
+    border-top: none;
+  }
+
+  .col-md-6 {
+    width: 50%;
+    padding-right: 16px;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
     display: none;
   }
-  .card {
-    width: 260px;
-    padding: 12px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 50);
-    border: 2px black solid;
-    border-radius: 12px;
-  }
-  header {
-     text-align: unset;
+}
 
-   }
-
-
-
-  .heading {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
-    color: #27221f;
-    font-size: 40px;
-    line-height: 1.4;
-    font-weight: 400;
-    text-align: center;
-  }
-
-   nav {
-     width: auto;
-     float: right;
-     margin-top: 4px;
-   }
-
-  .intro-section {
-    padding-top: 0px;
-  }
-
-
-
-  .intro-container {
-    max-width: 936px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0px;
-    padding: 0px;
-    opacity: 1;
-  }
-  .container {
-    max-width: 936px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0px;
-    padding: 0px;
-    opacity: 1;
-  }
-  .showcase-container {
-    max-width: 936px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0px;
-    padding: 0px;
-    opacity: 1;
-  }
-
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ max-width:936px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.intro-container {
+  max-width: 936px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  opacity: 1;
+}
 
   .footer-section {
     margin-top: 0px;
@@ -347,7 +351,10 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 1024px) {
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
   .heading {
     margin-bottom: 0px;
     padding-top: 0px;
@@ -356,7 +363,7 @@ a:hover {
 
   }
 
-  .navbar-container {
+  .navbarcontainer {
     margin-right: 24px;
     margin-left: 24px;
   }
@@ -376,7 +383,28 @@ a:hover {
     background-clip: border-box;
     -webkit-text-fill-color: inherit;
   }
-
 }
-@media screen and (min-width: 1440px) {
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+  .text-container {
+    padding: 50px 240px;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
