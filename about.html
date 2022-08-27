@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial - scale=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="author" content="DrewHertel">
 	<meta name="description" content="UI/UX Portfolio Website">
@@ -19,15 +21,14 @@
 
 
 <body class="body">
-	<div id="page-container">
-		<div id="content-wrap">
+
 	<header>
 		<div class="navbarcontainer">
 			<div class="navtoggle" id="myNavtoggle">
-				<a class="logo" href="index9.html"><img src="images/Logo48.svg" class="logo" alt="Drew Hertel"></a>
+				<a class="logo" href="index.html"><img src="images/Logo48.svg" class="logo" alt="Drew Hertel"></a>
 				<nav>
 					<ul>
-						<li><a href="index9.html">Work</a></li>
+						<li><a href="index.html">Work</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
 						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -45,19 +46,25 @@
 
 	<div class="container">
 		<picture>
-			<source srcset="images/aboutimg.jpg" media="(max-width:767px)" class="about">
-			<img src="images/aboutimg.jpg" alt="My Image">
+			<source srcset="images/Aboutimg.jpg" media="(max-width:767px)" class="about">
+			<img src="images/Aboutimg.jpg" alt="My Image">
 		</picture>
 
 	<div>
 
 			<h2>My story </h2>
-			<p> A fine artist turned designer I aim to create functional designs without sacrificing aesthetics. </p>
+			<p> A fine artist turned designer I aim to create functional designs without sacrificing aesthetics.<br><br>
+        I've taken a winding road to UI/UX design. From printmaker, to climbing shoe cobbler, and most recently illustrator.<br><br>
+				I've always looked for jobs where I could create and pursue my passions. Finding UI/UX felt full circle, creating a line through my past to my future. Shoe cobbling or Illustration may not appear to immediately translate to UI/UX design, but each enabled me to build a robust toolkit for solving creative problems.
+			</p>
+			<h2>Hobbies</h2>
+			In my spare time I enjoy getting outside to go climbing, seeing live music, traveling, and socializing with friends.  That's not to say I don't enjoy a good day inside. There I pass the time reading, painting, playing video games, or watching movies.<br><br>
+
 
 			<a href="files/resume.pdf" class="button" target="_blank">Download my resume</a>
 </div>
 
-<div>
+<div class="skillsandtools">
 
 				<h2>Skills & Tools</h2>
 				<div class="row" id="skills">
@@ -97,34 +104,36 @@
 
 
 
-		<footer id="contact">
+<footer id="contact">
 
-			<div class="footer-container">
-				<h2 class="heading2">How to reach me</h2>
-				<p class="center-align">
-					Do you like my work and want to discuss opportunities? Please get in touch.
-				</p>
-				<div class="social-icons">
-					<a href="mailto:drew.hertel@gmail.com" class="button">Email me</a>
-				</div>
-				<div class="social-icons">
-					<!--Social Media Layout and Placeholders-->
-					<a href="LINKEDIN-URL" target="_blank">
-						<i class="fa-brands fa-linkedin"></i>
-					</a>
-					<a href="TWITTER-URL" target="_blank">
-						<i class="fa-brands fa-instagram"></i>
-					</a>
+	<div class="footer-container">
+		<h2 class="heading2">How to reach me</h2>
+		<p class="center-align">
+			Do you like my work and want to discuss opportunities? Please get in touch.
+		</p>
+		<div class="social-icons">
+			<a href="mailto:drew.hertel@gmail.com" class="button">Email me</a>
+		</div>
+		<div class="social-icons">
+			<!--Social Media Layout and Placeholders-->
+			<a href="LINKEDIN-URL" class="social" target="_blank">
+				<i class="fa-brands fa-linkedin fa-2xl"></i>
+			</a>
 
-				</div>
-				<div class="center-align">
-					<h4>Copyright Drew Hertel 2022</h4>
-				</div>
-			</div>
-		</footer>
+			<a href="TWITTER-URL" class="social" target="_blank">
+				<i class="fa-brands fa-instagram fa-2xl"></i>
+			</a>
+
+		</div>
+		<div class="center-align">
+			<h4>Copyright Drew Hertel 2022</h4>
+		</div>
 	</div>
-</div>
-</div>
+</footer>
+
+
+
+
 
 
 
