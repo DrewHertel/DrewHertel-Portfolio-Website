@@ -86,7 +86,7 @@ header {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 nav {
@@ -96,7 +96,7 @@ nav {
 
 nav>ul {
   list-style-type: none;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   padding-right: 10px;
 }
 
